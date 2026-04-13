@@ -1,0 +1,151 @@
+/* Reset básico para mobile */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bodoni Moda', serif; /* Fonte Clássica */
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #f8e8e8; /* Cor de fallback rosada */
+}
+
+.main-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Imagem da Cortina/Brilho */
+    background: url('background-entrada.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+}
+
+.content-wrapper {
+    width: 100%;
+    max-width: 400px; /* Centralizado e responsivo */
+    text-align: center;
+    color: #333; /* Cor do texto escuro suave */
+}
+
+.main-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    font-style: italic;
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+
+.icon-container {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.shoe-icon {
+    width: 40px; /* Tamanho discreto e elegante */
+    opacity: 0.7;
+}
+
+/* Estilização dos Campos de Input */
+.input-group {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    /* Fundo semi-transparente fosco */
+    background: rgba(255, 255, 255, 0.6); 
+    backdrop-filter: blur(5px); /* Efeito de vidro fosco */
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: rgba(212, 175, 55, 0.5); /* Dourado suave no foco */
+    background: rgba(255, 255, 255, 0.8);
+}
+
+/* Estilização do Botão Continuar */
+.continue-btn {
+    width: 100%;
+    padding: 18px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    /* Gradiente sutil para efeito de relevo */
+    background: linear-gradient(145deg, #d4af37, #b8972e); 
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.continue-btn:hover {
+    background: linear-gradient(145deg, #b8972e, #d4af37);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.continue-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+/* Background de Erro - Imagem Total */
+.bg-erro .full-screen-image img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* Background de Sucesso - Limpo com Vídeo */
+.bg-sucesso {
+    background: url('background-sucesso.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.video-container {
+    width: 90%;
+    max-width: 800px;
+    /* Moldura invisível ou sutil para o vídeo */
+    box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.final-video {
+    width: 100%;
+    display: block;
+}
